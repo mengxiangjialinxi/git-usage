@@ -52,7 +52,7 @@
         [root@docker01 mydocker]# git remote -v
         git_test        https://github.com/mengxiangjialinxi/git0724.git (fetch)
         git_test        https://github.com/mengxiangjialinxi/git0724.git (push)
-        #####这里的git_test就是远程仓库在本地的别名，之后push时只需要用别名即可。
+        #####这里的git_test就是远程仓库在本地的别名，之后push时只需要用别名即可
 
 8.      将本地仓push到远程仓库
 
