@@ -33,7 +33,7 @@
         /root/mydocker
         [root@docker01 mydocker]# git init
         重新初始化现存的 Git 版本库于 /root/mydocker/.git/
-        ##这时，当前文件夹/root/mydocker下就新建了一个本地仓.git/
+        #####这时，当前文件夹/root/mydocker下就新建了一个本地仓.git/
 
 5.      创建文件
 
@@ -48,15 +48,15 @@
 
 7.      将本地仓库关联到github远程仓库
 
-        [root@docker01 mydocker]# git remote add git_test https://github.com/mengxiangjialinxi/git0724.gi
+        [root@docker01 mydocker]# git remote add git_test https://github.com/mengxiangjialinxi/git0724.git
         [root@docker01 mydocker]# git remote -v
         git_test        https://github.com/mengxiangjialinxi/git0724.git (fetch)
         git_test        https://github.com/mengxiangjialinxi/git0724.git (push)
-        #这里的git_test就是远程仓库在本地的别名，之后push时只需要用别名即可。
+        #####这里的git_test就是远程仓库在本地的别名，之后push时只需要用别名即可。
 
 8.      将本地仓push到远程仓库
 
-        命令说明：git push 远程仓别名 本地仓branch：远程仓branch
+        ***命令说明：git push 远程仓别名 本地仓branch：远程仓branch
 
         [root@docker01 mydocker]# git push git_test master:master
         Username for 'https://github.com': mengxiangjialinxi
@@ -68,11 +68,11 @@
         Total 1 (delta 0), reused 0 (delta 0)
         To https://github.com/mengxiangjialinxi/git0724.git
          * [new branch]      master -> master
-        #可以看到，本地的master branch传到了远程仓的master branch
+        #####可以看到，本地的master branch传到了远程仓的master branch
 
 9.      添加branch分支
 
-        通过修改文件后，将本地的文件add 并commit到本地仓，然后push到远程的另一个分支：branch_test-1
+        ***通过修改文件后，将本地的文件add 并commit到本地仓，然后push到远程的另一个分支：branch_test-1
 
         [root@docker01 mydocker]# vim branch_test
                 test for branch push
@@ -94,5 +94,5 @@
         To https://github.com/mengxiangjialinxi/git0724.git
            d7edf28..8961651  master -> branch_test-1
 
-        ###可以看到，多了branch_test-1分支，此分支下多了文件branch_test，重新提交的文件，备注是"branch first commit"
+        #####可以看到，多了branch_test-1分支，此分支下多了文件branch_test，重新提交的文件，备注是"branch first commit"
 
